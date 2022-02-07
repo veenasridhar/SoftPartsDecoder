@@ -1,0 +1,80 @@
+body{
+background-image: linear-gradient(#b6fbff,#83a4d4);
+}
+img{
+    margin-top: 0px;
+   position: absolute;
+    width:100px;
+    height:100px;
+}
+#heading
+{
+    color:black;
+   padding: 20px;
+    margin-left: auto;
+    text-align: center;
+    font-size: 40px;
+}
+.Input{
+   
+    margin: auto;
+}
+.centerlabel{
+   
+    margin-left:50px;
+}
+#form-body{
+    
+    margin: 80px auto;
+    margin-bottom: 50px;
+    width: 35%;
+}
+.formlabel{
+    margin: 10px 0px;
+    padding:10px;
+    font-size: 32px;
+}
+select{
+    margin: 10px 0px;
+    font-size: 24px;
+}
+#ValveSize{
+    padding-left:10px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+
+#partNumberBtn{
+    margin-top: 10px;
+    margin-left: 100px;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    background-color: cadetblue;
+    border-radius: 25px;
+    border-style: solid black 10px;
+}
+.solution{
+    color: black;
+    display:none;
+    text-align: center;
+    margin: 0px 200px;
+    padding:10px;
+
+}
+.flex-container{
+    display:flex;
+    align-self: center;
+}
+  .tableHeading,.tabledata{
+      display: flex;
+      padding: 10px 10px; 
+      font-size: 20px;
+  }
+  .flexHeadings,.flexdata{
+    padding: 10px 10px;
+    border: solid black 1px;
+    font-size: 20px;
+    width:250px;
+  }
