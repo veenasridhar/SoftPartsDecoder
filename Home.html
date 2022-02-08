@@ -1,0 +1,139 @@
+<html>
+    <head>
+    <link href= "Style.css" rel="Stylesheet">
+   <script src="script.js"></script>
+   <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    </head>
+    <title>Titles Decoder</title>
+    <body>
+    <div id = "container">
+        <img src="C:\Users\Veena.Sridhar\Desktop\Gasket Tool\logo.png">
+        <div id= "heading">
+           SOFT PARTS DECODER
+        </div>
+        
+    <div id="form-body">
+        <form id= "form1">
+            <div class= "centerlabel">
+            <label class ="formlabel">Valve Model</label>
+            <select id= "ValveModel" >
+                <option value="461" >461</option>
+                <option value="Cav4" >Cav4</option>
+                <option value="D">D</option>
+                <option value="DA" >DA</option>
+                <option value="EAD" >EAD</option>
+                <option value="EAS" >EAS</option>
+                <option value="EAT" >EAT</option>
+                <option value="ED" >ED</option>
+                <option value="EZ" >EZ</option>
+                <option value="ES" >ES</option>
+                <option value="ET" >ET</option>
+                <option value="ET-C" >ET-C</option>
+                <option value="EWD" >EWD</option>
+                <option value="EWT" >EWT</option>
+                <option value="EWS" >EWS</option>
+                <option value="EWT-C" >EWT-C</option>
+                <option value="EZ-C" >EZ-C</option>
+                <option value="Large ED/EWD" >Large EWD</option>
+                <option value="Large ET/EWT" >Large EWT</option>
+                <option value="NotchFlo DST" >NotchFlo DST</option>
+                <option value="HPS" >HPS</option>
+                <option value="HPT" >HPT</option>
+            </select>
+        </div>
+        <div class = "flex-container">
+           <div id="flex-id1"> <label class ="formlabel">Valve Size</label>
+            <select id= "ValveSize">
+                <option value="1" >1</option>
+                <option value="2" >2</option>
+                <option value="3" >3</option>
+                <option value="4" >4</option>
+                <option value="6" >6</option>
+                <option value="8" >8</option>
+                <option value="10" >10</option>
+                <option value="12" >12</option>
+                <option value="14" >14</option>
+                <option value="16" >16</option>
+                <option value="18" >18</option>
+                <option value="20" >20</option>
+                <option value="1/2" >1/2</option>
+                <option value="1 1/2" >1 1/2</option>
+                <option value="2 1/2" >2 1/2</option>
+            </select>
+        </div>
+        <div id="flex-id2">
+            <label class ="formlabel">Port Size</label>
+            <select id= "PortSize">
+                <option value="1/2" >1/2</option>
+                <option value="3/4" >3/4</option>
+                <option value="1" >1</option>
+                <option value="1 1/2" >1 1/2</option>
+                <option value="1 5/16" >1 5/16</option>
+                <option value="1 7/8" >1 7/8</option>
+                <option value="2" >2</option>
+            </select>
+        </div>
+        </div>
+        <div class ="centerlabel">
+            <label class ="formlabel">Packing</label>
+            <select id= "Packing">
+                <option value="PTFE" >PTFE</option>
+                <option value="Graphite" >Graphite</option>
+                <option value="Enviroseal PTFE" >Enviroseal PTFE</option>
+                <option value="ISO Seal PTFE" >ISO Seal PTFE</option>
+            </select>
+        </div>
+        <div class = "flex-container">
+            <div id="flex-id1"> <label class ="formlabel">Travel</label>
+             <select id= "Travel">
+                 <option value="1" >1</option>
+                 <option value="2" >2</option>
+                 <option value="3" >3</option>
+                 <option value="4" >4</option>
+                 <option value="5" >5</option>
+                 <option value="6" >6</option>
+                 <option value="8" >8</option>
+                 <option value="10" >10</option>
+                 <option value="12" >12</option>
+                 <option value="14" >14</option>
+                 <option value="16" >16</option>
+                 <option value="18" >18</option>
+                 <option value="20" >20</option>
+                 <option value="1/2" >1/2</option>
+                 <option value="1 1/2" >1 1/2</option>
+                 <option value="2 1/2" >2 1/2</option>
+             </select>
+         </div>
+        <div id="flex-id2">
+            <label class ="formlabel">Yoke Boss</label>
+            <select id= "YokeBoss">
+                <option value="2 1/8" >2 1/8</option>
+                <option value="2 13/16" >2 13/16</option>
+                <option value="3 9/16" >3 9/16</option>
+                <option value="5" >5</option>
+                <option value="5H" >5H</option>
+            </select>
+        </div>
+        </div>
+    </form>
+   <div> <button onclick = "partNumber()" id="partNumberBtn">Get Part Number</button> </div>
+    </div>
+    <div class="solution" id="solution">
+        <div class="tableheading">
+                <div class="flexHeadings">Valve Model</div>
+                <div class="flexHeadings">Valve Size</div>
+                <div class="flexHeadings">Packing</div>
+                <div class="flexHeadings">Gasket PartNumber</div>
+                <div class="flexHeadings">Packing PartNumber</div>
+
+            </div>
+            <div class= "tabledata">
+                <div class="flexdata" id ="model"></div>
+                <div class="flexdata" id ="size"></div>
+                <div class="flexdata" id = "packing"></div>
+                <div class="flexdata" id = "gasketpn"></div>
+                <div class="flexdata" id = "packingpn"></div>
+            </div>
+        </div>
+</body>
+</html>
